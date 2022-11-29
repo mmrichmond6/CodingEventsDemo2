@@ -28,7 +28,7 @@ namespace CodingEventsDemo
             services.AddControllersWithViews();
 
             //updated syntax (used with NuGet package: Pomelo v6.0.2)
-            var connectionString = "server=localhost;userid=coding_events;password=Learn2code!;database=coding_events;";
+            var connectionString = "server=localhost;userid=coding_events;password=$CodingEvents$;database=coding_events;";
             var serverVersion = new MySqlServerVersion(new Version(8, 0, 29));
             services.AddDbContext<EventDbContext>(
                   dbContextOptions => dbContextOptions
